@@ -1,95 +1,41 @@
+# Retail Sales Exploratory Data Analysis
 
-# Retail Sales Exploratory Data Analysis (EDA)
+What drives revenue in a year of retail transactions? This notebook checks data quality, profiles customers and products, looks at sales over time and turns the results into business recommendations.
 
-## Project Overview
+## Data
 
-This project involves a comprehensive Exploratory Data Analysis (EDA) on a Retail Sales Dataset as part of the . The primary objective is to understand the dataset's structure, uncover underlying patterns, and derive actionable business insights through statistical analysis and data visualization.
+1,000 transactions from January 2023 to January 2024 with date, customer ID, gender, age, product category (Beauty, Clothing, Electronics), quantity, unit price and total amount.
 
-The analysis covers customer behavior, product preferences, and sales trends, providing a foundation for future machine learning models such as sales forecasting or customer segmentation.
+## What the notebook covers
 
-## Key Features & Analysis
+1. Data quality: missing values, duplicates, a check that quantity × price equals the total
+2. Descriptive statistics, skewness and kurtosis
+3. Customer demographics and product categories
+4. Monthly and day-of-week sales trends
+5. Correlations between variables
+6. IQR outlier detection
+7. Business insights and recommendations
 
-* **Data Quality Assessment:** Identifying missing values, duplicates, and ensuring data integrity.
+## Findings
 
+- **Total revenue $456,000**, average transaction $456. Every customer ID appears once, so the data supports no repeat-purchase analysis.
+- **Unit price drives transaction value:** correlation 0.85 between price per unit and total amount.
+- **Electronics earns the most** ($156,905, 34.4% of revenue). Clothing has the most transactions (35.1%).
+- **May was the best month** ($53,150) and September the worst ($23,620), a 125% swing worth planning inventory around.
+- **Saturday is the top day**, but weekdays still bring in 70% of revenue.
+- **Customers aged 46–55 spend the most** in total ($100,690).
+- Female and male customers spend almost the same per transaction ($457 vs $455).
+- No outliers by the IQR rule and no data quality problems.
 
-* **Descriptive Statistics:** Summarizing the central tendency and dispersion of numerical features like Age, Price per Unit, and Total Amount.
+## How to run
 
-
-* **Univariate Analysis:** Detailed examination of individual variables (e.g., customer demographics and product categories).
-
-
-* **Temporal Analysis:** Tracking sales performance and transaction frequency over time.
-
-
-* **Product Analysis:** Evaluating the popularity and revenue contribution of different product categories.
-
-
-* **Multivariate Analysis:** Investigating correlations and relationships between different variables.
-
-
-* **Outlier Detection:** Using statistical methods to identify and handle anomalous data points.
-
-
-
-## Dataset Information
-
-The dataset consists of 1,000 transaction records with the following attributes:
-
-* **Transaction ID:** Unique identifier for each sale.
-* **Date:** The timestamp of the transaction.
-* **Customer ID:** Unique identifier for customers.
-* **Gender & Age:** Customer demographic information.
-* **Product Category:** Category of the item purchased (Electronics, Clothing, Beauty).
-* **Quantity:** Number of units purchased.
-* **Price per Unit & Total Amount:** Financial metrics for each transaction.
-
-## Technical Stack
-
-* **Language:** Python
-* **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, SciPy, Scikit-learn.
-
-
-* **Environment:** Jupyter Notebook / Google Colab
-
-## How to Run
-
-1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/retail-sales-eda.git
-
-```
-
-
-2. Install the required dependencies:
-```bash
+git clone https://github.com/mehtesham13/Retail-Sales-Exploratory-Data-Analysis.git
+cd Retail-Sales-Exploratory-Data-Analysis
 pip install pandas numpy matplotlib seaborn scipy scikit-learn openpyxl
-
+jupyter notebook "retail_sales_eda_comprehensive---.ipynb"
 ```
 
+Course: CS667 Practical Data Science, Pace University
 
-3. Open the Jupyter Notebook:
-```bash
-jupyter notebook retail_sales_eda_comprehensive_.ipynb
-
-```
-
-
-
-## Key Business Insights
-
-*(Note: You can fill this section in with specific observations from your notebook, for example:)*
-
-* **Demographics:** The customer base is nearly evenly split between male (49%) and female (51%).
-
-
-* **Product Popularity:** Clothing is the most frequent product category, accounting for approximately 35.1% of transactions.
-
-
-* **Revenue:** The total amount per transaction is strongly influenced by the "Price per Unit," with an average total sale of approximately $456.
-
-
-
-## Author
-
-**Muhammad Ehtesham**
-*Practical Data Science Student | Pace University*
+Author: Muhammad Ehtesham · [LinkedIn](https://www.linkedin.com/in/muhammad-ehtesham-dsa)
