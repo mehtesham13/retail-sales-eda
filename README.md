@@ -4,7 +4,7 @@ What drives revenue in a year of retail transactions? This notebook checks data 
 
 ## Data
 
-1,000 transactions from January 2023 to January 2024 with date, customer ID, gender, age, product category (Beauty, Clothing, Electronics), quantity, unit price and total amount.
+1,000 transactions from January 2023 to January 2024 with date, customer ID, gender, age, product category (Beauty, Clothing, Electronics), quantity, unit price and total amount. Source: the Kaggle Retail Sales Dataset, included as `data/retail_sales_dataset.csv`.
 
 ## What the notebook covers
 
@@ -32,7 +32,7 @@ What drives revenue in a year of retail transactions? This notebook checks data 
 ```bash
 git clone https://github.com/mehtesham13/retail-sales-eda.git
 cd retail-sales-eda
-pip install pandas numpy matplotlib seaborn scipy scikit-learn openpyxl
+pip install -r requirements.txt
 jupyter notebook retail_sales_eda.ipynb
 ```
 
