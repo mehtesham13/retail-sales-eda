@@ -30,10 +30,10 @@ What drives revenue in a year of retail transactions? This notebook checks data 
 ## How to run
 
 ```bash
-git clone https://github.com/mehtesham13/Retail-Sales-Exploratory-Data-Analysis.git
-cd Retail-Sales-Exploratory-Data-Analysis
+git clone https://github.com/mehtesham13/retail-sales-eda.git
+cd retail-sales-eda
 pip install pandas numpy matplotlib seaborn scipy scikit-learn openpyxl
-jupyter notebook "retail_sales_eda_comprehensive---.ipynb"
+jupyter notebook retail_sales_eda.ipynb
 ```
 
 Course: CS667 Practical Data Science, Pace University
